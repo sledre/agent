@@ -1,0 +1,6 @@
+[submodule "plugins/hooking/Detours"]
+	path = plugins/hooking/Detours
+	url = https://github.com/microsoft/Detours.git
+[submodule "plugins/unpacking/mal_unpack"]
+	path = plugins/unpacking/mal_unpack
+	url = https://github.com/hasherezade/mal_unpack.git
