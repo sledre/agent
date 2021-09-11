@@ -1,5 +1,5 @@
 ﻿
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
     partial class ProjectInstaller
     {
@@ -41,8 +41,8 @@ namespace AutoDetoursAgent
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.Description = "Agent AutoDetours";
-            this.serviceInstaller1.DisplayName = "Agent AutoDetours";
+            this.serviceInstaller1.Description = "Agent SledRE";
+            this.serviceInstaller1.DisplayName = "Agent SledRE";
             this.serviceInstaller1.ServiceName = "AgentService";
             this.serviceInstaller1.StartType = System.ServiceProcess.ServiceStartMode.Automatic;
             this.serviceInstaller1.AfterInstall += new System.Configuration.Install.InstallEventHandler(this.serviceInstaller1_AfterInstall);

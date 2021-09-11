@@ -4,7 +4,7 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
     public class JobPESieve : Job
     {

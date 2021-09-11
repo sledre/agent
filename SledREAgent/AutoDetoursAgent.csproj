@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{352A4D12-1CBF-40DE-B9CE-147E99334823}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>AutoDetoursAgent</RootNamespace>
-    <AssemblyName>AutoDetoursAgent</AssemblyName>
+    <RootNamespace>SledREAgent</RootNamespace>
+    <AssemblyName>SledREAgent</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

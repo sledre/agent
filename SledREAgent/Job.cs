@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
 	public abstract class Job
 	{

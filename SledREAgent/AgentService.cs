@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
     public partial class AgentService : ServiceBase
     {
@@ -35,13 +35,13 @@ namespace AutoDetoursAgent
             InitializeComponent();
 
             // Logging Set up
-            if (!EventLog.SourceExists("AutoDetoursSource"))
+            if (!EventLog.SourceExists("SledRESource"))
             {
                 EventLog.CreateEventSource(
-                    "AutoDetoursSource", "AutoDetoursLog");
+                    "SledRESource", "SledRELog");
             }
-            eventLog.Source = "AutoDetoursSource";
-            eventLog.Log = "AutoDetoursLog";
+            eventLog.Source = "SledRESource";
+            eventLog.Log = "SledRELog";
             logger = new Logger(eventLog);
         }
 
@@ -71,7 +71,7 @@ namespace AutoDetoursAgent
             {
                 apiBaseURL = "http://172.20.0.10/api/"; // Don't change me! Check out api.txt
             }
-            logger.Log("AutoDetours API is located at : " + apiBaseURL);
+            logger.Log("SledRE API is located at : " + apiBaseURL);
 
             // Set up HTTP Client
             client.BaseAddress = new Uri(apiBaseURL);
@@ -84,13 +84,13 @@ namespace AutoDetoursAgent
             worker.malware = "";
 
             // Logging
-            logger.Log("AutoDetours service started.");
+            logger.Log("SledRE service started.");
         }
 
         protected override void OnStop()
         {
             // Logging
-            logger.Log("AutoDetours service stopped.");
+            logger.Log("SledRE service stopped.");
         }
 
         private async Task<bool> RegisterWorker()

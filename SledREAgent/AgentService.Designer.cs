@@ -1,5 +1,5 @@
 ﻿
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
     partial class AgentService
     {
