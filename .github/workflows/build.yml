@@ -42,8 +42,8 @@ jobs:
         with:
           name: artifacts-agent
           path: |
-            AutoDetoursAgent/bin/x86/Release/AutoDetoursAgent.exe
-            AutoDetoursAgent/bin/x86/Release/Newtonsoft.Json.dll
+            SledREAgent/bin/x86/Release/SledREAgent.exe
+            SledREAgent/bin/x86/Release/Newtonsoft.Json.dll
     
       
   build-detours:

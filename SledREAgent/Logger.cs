@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AutoDetoursAgent
+namespace SledREAgent
 {
     public class Logger
     {

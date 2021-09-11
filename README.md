@@ -13,9 +13,9 @@ The agent is linked to the wokers API so it can resgiter, find a task and submit
 # Install
 
 * Open VS Console as Administrator
-* Run the following command ```InstallUtil AutoDetoursAgent.exe```
+* Run the following command ```InstallUtil SledREAgent.exe```
 
 # Uninstall
 
 * Open VS Console as Administrator
-* Run the following command ```InstallUtil /u AutoDetoursAgent.exe```
+* Run the following command ```InstallUtil /u SledREAgent.exe```
