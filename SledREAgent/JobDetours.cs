@@ -53,7 +53,7 @@ namespace SledREAgent
         {
             logger.Log("Submitting results...");
             // Submit JSON results to the API
-            string url = "workers/" + workerId + "/submit_task/";
+            string url = "workers/" + workerId + "/submit_results/";
             HttpResponseMessage response = null;
             var byteArray = File.ReadAllBytes(defaultPathTraces);
             var form = new MultipartFormDataContent();
