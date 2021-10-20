@@ -514,8 +514,8 @@ BOOL APIENTRY DllMain(HINSTANCE hModule, DWORD dwReason, PVOID lpReserved)
 
     logFileHandle = Real_CreateFileW(L"C:\\Temp\\traces.jsonl",
         GENERIC_WRITE,
-        0,
         FILE_SHARE_READ,
+        NULL,
         CREATE_ALWAYS,
         FILE_ATTRIBUTE_NORMAL,
         NULL);
