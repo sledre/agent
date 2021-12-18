@@ -38,7 +38,7 @@ namespace SledREAgent
             
             withdll.WaitForExit(workerTask.time * 1000);
                 
-            logger.Log("Tracing stopped");
+            logger.Log("Tracing stopped.");
 
             // Let's sleep a while before sending results (file is not created quickly)
             Thread.Sleep(1000);
@@ -55,7 +55,8 @@ namespace SledREAgent
             // Submit JSON results to the API
             string url = "workers/" + workerId + "/submit_results/";
             HttpResponseMessage response = null;
-            var byteArray = File.ReadAllBytes(defaultPathTraces);
+            File.Copy(defaultPathTraces, "C:\\Temp\\results.jsonl");
+            var byteArray = File.ReadAllBytes("C:\\Temp\\results.jsonl");
             var form = new MultipartFormDataContent();
             form.Add(new ByteArrayContent(byteArray, 0, byteArray.Length), "results", "traces.jsonl");
             try
