@@ -212,6 +212,7 @@ agent/hooking/*/bin.x86
 agent/hooking/*/obj.X64
 agent/hooking/*/bin.X64
 agent/hooking/bin.X86
+SledREAgent/obj/
 
 # images
 workers/*.qcow2
